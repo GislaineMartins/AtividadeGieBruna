@@ -9,7 +9,8 @@ public class calculoMedia{
 
         double resultMedia = media(resultSoma1, resultSoma2, resultSoma3, resultSoma4);
 
-        System.out.printf("media %.2f",resultMedia);
+        
+        System.out.printf("O valor da media calculada é:  %.2f",resultMedia);
         
         
     }
