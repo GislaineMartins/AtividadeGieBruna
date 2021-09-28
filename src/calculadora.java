@@ -4,7 +4,7 @@ public class calculadora {
     public static void main(String[] args) {
         cabecalho();
         menu();
-        
+        ler("Escolha uma das opções: ");
     }
 
     static void cabecalho(){
@@ -18,8 +18,17 @@ public class calculadora {
         System.out.println("\t4- Dividir");
     }
 
-    
+    static int ler(String mensagem){
+        Scanner sc = new Scanner(System.in);
+        int opcao;
+        do{
+            System.out.println(mensagem);
+            opcao = Integer.parseInt(sc.nextLine());
+            if(opcao < 0 || opcao > 4){
+                System.out.println("\nDigite o número novamente: ");
+            }
+        }while(opcao < 0 || opcao > 4);
+        return opcao;
+    }
 
-
-    
 }
