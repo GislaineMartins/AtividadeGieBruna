@@ -2,6 +2,14 @@ public class calculoMedia{
 
     public static void main(String[] args) {
         cabecalho();
+        int resultSoma1 = somar(10, 10);
+        int resultSoma2 = somar(20, 20);
+        int resultSoma3 = somar(30, 30);
+        int resultSoma4 = somar(40, 40);
+
+        double resultMedia = media(resultSoma1, resultSoma2, resultSoma3, resultSoma4);
+
+        System.out.printf("media %.2f",resultMedia);
         
         
     }
