@@ -2,16 +2,17 @@ import java.util.Scanner;
 
 public class calculadora {
     public static void main(String[] args) {
+
 		cabecalho();
 		menu();
-		int opcao =  ler_opcao("Digite opcao");
+		int opcao =  ler_opcao("\nDigite opcao");
 		int verifica = verificaOpcao(opcao);
 		opcaoEscolhida(verifica);
 			
 	}
 	
 	static void cabecalho(){
-	    System.out.println("*****Calculadora*****");
+	    System.out.println("\n*****Calculadora*****\n");
 	}
 	
 	static void menu(){
@@ -31,7 +32,7 @@ public class calculadora {
 	static int verificaOpcao(int opcao){
 	    do{
 	        if(opcao < 1 || opcao > 4){
-	        System.out.println("opcao deve estar entre 1 e 4");
+	        System.out.println("Opcao deve estar entre 1 e 4");
 	        opcao = ler_opcao("Digite opcao novamente: ");
 	    }
 	        
@@ -39,9 +40,6 @@ public class calculadora {
 	    
 	    return opcao;
 	}
-	
-		
-	
 	
 	static void opcaoEscolhida(int opcao){
 	    switch(opcao){
@@ -73,9 +71,7 @@ public class calculadora {
 	            int valor8 = ler_opcao("Digite valor 2: ");
 	            double dividir = dividir(valor7, valor8);
 	            System.out.println("divisão: "+ dividir);
-	           break;
-	       
-	        
+	           break;	        
 	    }
 	    
 	}
